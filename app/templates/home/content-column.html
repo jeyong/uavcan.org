@@ -7,28 +7,28 @@
     <div class="carousel-item active">
       <img class="d-block w-100" src="/static/images/katla.aero.jpg" alt="Aircraft">
       <div class="carousel-caption">
-        <p>UAVCAN interfaces avionics and on-board computing systems in manned and unmanned aircraft</p>
+        <p>UAVCAN은 유인 및 무인 항공기에서 항공 전자 기기와 온보드 컴퓨팅 시스템을 인터페이스한다.</p>
         <p class="credits">Image by Katla Aero</p>
       </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="/static/images/revolve.jpg" alt="Robotics">
       <div class="carousel-caption">
-        <p>UAVCAN enables real-time distributed computing in bleeding-edge robotics</p>
+        <p>UAVCAN은 최첨단 로보틱스 분야에서 실시간 분산 컴퓨팅을 가능하게 한다.</p>
         <p class="credits">Image by Revolve NTNU Trondheim</p>
       </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="/static/images/hitec.jpg" alt="COTS equipment">
       <div class="carousel-caption">
-        <p>UAVCAN is an open interoperability standard for off-the-shelf equipment</p>
+        <p>UAVCAN은 실제 사용할 수 있는 장치를 위한 오픈 상호운용 표준이다.</p>
         <p class="credits">Image by Hitec RCD</p>
       </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="/static/images/earthrise.jpg" alt="Spacecraft">
       <div class="carousel-caption">
-        <p>UAVCAN runs distributed avionics in modern spacecraft</p>
+        <p>UAVCAN은 현대식 비행체내부의 분산된 항공 전자 기기형태로 구동한다.</p>
       </div>
     </div>
   </div>
@@ -43,61 +43,53 @@
 </div>
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
-<h1 id="what" class="mt-4">What is UAVCAN?</h1>
+<h1 id="what" class="mt-4">UAVCAN 란?</h1>
 <p>
-  UAVCAN is an open technology for real-time intravehicular distributed computing and communication based on
-  modern networking standards (Ethernet, CAN FD, etc.).
-  It was created to address the challenge of on-board deterministic computing and data distribution in
-  next-generation intelligent vehicles: manned and unmanned aircraft, spacecraft, robots, and cars.
+  UAVCAN은 현대 네트워킹 표준(이더넷, CAN FD 등)을 기반으로 실시간으로 차량내부의 분산 컴퓨팅과 통신을 위한 오픈 기술이다.
+  차세대 지능 차량(유인/무인 비행선, 우주선, 로봇, 차량)에서 온보드 컴퓨팅과 데이터 분산의 문제를 해결하기 위해서 탄생했다.
 </p>
 <p>
-  The name stands for <i>Uncomplicated Application-level Vehicular Computing And Networking</i>.
+  <i>Uncomplicated Application-level Vehicular Computing And Networking</i>라는 의미를 가고 있다.
 </p>
 <p>
-  UAVCAN is a standard open to everyone, and it will always remain this way.
-  No licensing or approval of any kind is necessary for its implementation, distribution, or use.
+  UAVCAN은 모든 사람에게 공개된 표준이며 향후에도 오픈된 상태를 유지할 예정이다. 구현, 배포 및 사용에 있어서 라이센스나 승인이 없이 사용이 가능하다.
 </p>
-<h2>Features</h2>
+<h2>특징</h2>
 <ul>
   <li>
-    Designed for <b>complex, high-integrity, real-time vehicular computing</b> systems.
+    복잡하고, 높은 무결성, 실시간 차량 계산이 필요한 시스템을 위한 설계
   </li>
   <li>
-    <b>Publish/subscribe</b> and <b>request/response (RPC)</b> exchange semantics.
+    <b>Publish/subscribe</b> 와 <b>request/response (RPC)</b> 로 시멘틱스를 교환
   </li>
   <li>
-    Specialized interface description language provides <b>rich zero-cost interface abstractions</b>
-    and facilitates <b>service-oriented design</b>.
+    특수한 인터페이스 설명 언어를 통해서 <b>풍부한 인터페이스 추상화</b>를 제공하고 <b>서비스 중심 설계</b>를 촉진
   </li>
   <li>
-    <b>Lightweight</b> &mdash; implementable from scratch in ca. 1000 logical lines of code; cheap to verify and validate.
+    <b>경량화</b> &mdash; 1000 논리 라인 코드로 구현 가능. 검증 및 유효성 검사를 쉽게 가능
   </li>
   <li>
-    <b>Peer-to-peer network</b> &mdash; no bus master, no single point of failure.
+    <b>피어간 네트워크</b> &mdash; 버스 마스터가 없어서 단일 장애점 문제가 없음
   </li>
   <li>
-    <b>Modular redundancy</b> for fault-tolerant systems with automatic fail-over.
+    <b>모듈 다중화</b>를 통해 자동 복구로 결함 감내 시스템
   </li>
   <li>
-    <b>Different transport-layer protocols</b> (Ethernet, CAN, etc.), including heterogeneous transport redundancy.
+    이종의 트랜스포트 다중화를 포함한 <b>다른 트랜스포트 계층 프로토콜</b>(이더넷, CAN 등)
   </li>
   <li>
-    <b>High-quality open source reference implementations</b> are freely available under the MIT license.
+    <b>높은 품질의 오픈소스 참조 가능한 구현</b>을 MIT 라이센스로 자유롭게 사용
   </li>
 </ul>
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
-<h1 id="how">How do I use UAVCAN?</h1>
+<h1 id="how">UAVCAN 사용 방법은?</h1>
 <p>
-  First, read the <a href="/guide" target="_blank">Guide</a>. To learn the technical details, read the
-  <a href="/specification" target="_blank">Specification</a>. Familiarize yourself with the
-  <a href="https://github.com/UAVCAN/public_regulated_data_types">regulated DSDL repository</a>.
-  If you have questions or feedback, you can check out the
-  <a href="https://forum.uavcan.org/t/the-uavcan-v1-faq/1394">FAQ</a>
-  or bring them to the <a href="https://forum.uavcan.org">forum</a>.
+  먼저 <a href="/guide" target="_blank">가이드</a> 문서 읽고 상세 기술에 대해서는 <a href="/specification" target="_blank">스펙</a> 문서 읽기. <a href="https://github.com/UAVCAN/public_regulated_data_types">정규 DSDL 저장소</a>에 익숙해지기.
+  질문이나 피드백이 있다면 <a href="https://forum.uavcan.org/t/the-uavcan-v1-faq/1394">FAQ</a> 혹은 <a href="https://forum.uavcan.org">포럼</a>을 활용하기.
 </p>
 <p>
-  Pick one of the free open source implementations (MIT licensed) for use in your application:
+  어플리케이션 개발에 아래 오픈 소스 구현(MIT 라이센스) 중에 하나를 고르기:
 </p>
 <div class="table-responsive">
   <table class="table table-borderless table-sm w-unset table-nowrap">
@@ -136,13 +128,11 @@
   </table>
 </div>
 <p>
-  None of these implementations suits your needs? Write your own!
-  UAVCAN is a very simple protocol; an experienced developer can
-  <a href="https://twitter.com/JediJeremy/status/1263041116321886208">easily</a>
-  create a customized implementation from scratch to address the unique needs of their application.
+  위에 구현 중에 적합한 것이 없다면? 직접 작성해보세요!
+  UAVCAN은 매우 단순한 프로토콜로 경험있는 개발자라면 <a href="https://twitter.com/JediJeremy/status/1263041116321886208">쉽게</a> 어플리케이션에 맞게 직접 커스텀 구현을 만들 수 있습니다.
 </p>
 <p>
-  These open source tools will help you design, develop, and maintain your UAVCAN-based application:
+  이런 오픈 소스 도구들로 UAVCAN 기반 어플리케이션의 설계, 개발, 유지보수하는데 도움을 얻을 수 있습니다.:
 </p>
 <ul>
   <li>
@@ -157,26 +147,24 @@
   </li>
   <li>
     <a href="https://github.com/UAVCAN/yukon">Yukon</a> <em>(work-in-progress)</em> &mdash;
-    a rich IDE for observing, debugging, and interacting with a UAVCAN bus.
-    This product is currently under active development; ETA 2021Q4.
+    UAVCAN 버스를 관찰, 디버깅, 상호 작용하는 IDE
+    현재 활발히 개발 중에 있음; ETA 2021Q4.
   </li>
 </ul>
 <p>
-  Also, third-party solutions may be found <a href="https://github.com/search?q=uavcan">on GitHub</a>.
+  또한 써드파티 솔루션을 <a href="https://github.com/search?q=uavcan">GitHub</a>에서 찾을 수 있다.
 </p>
 <p>
-  Please <a href="https://forum.uavcan.org/t/referencing-the-uavcan-project-in-publications/766" target="_blank"
-  >reference UAVCAN</a> in scientific or technical publications.
+  <a href="https://forum.uavcan.org/t/referencing-the-uavcan-project-in-publications/766" target="_blank"
+  >UAVCAN 참고</a>를 통해 기술적이 내용을 공지
 </p>
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
-<h1 id="why">Why do I need UAVCAN?</h1>
+<h1 id="why">왜 UAVCAN이 필요할까?</h1>
 <p>
-  Modern vehicles are becoming increasingly complex as they implement advanced
-  autonomy and safety capabilities.
-  Most of the complexity is concentrated around the on-board software which largely defines the
-  functional capabilities of the vehicle, yielding the concept of a <q>software-defined vehicle</q>.
-  This is especially true for unmanned transport.
+  현대의 비행체는 고급 자동화와 안전 기능을 구현함으로써 복잡도가 더욱 증가하고 있다.
+  복잡도의 대부분은 온보드 소프트웨어에 집중되고 있다.
+  특히 무인 트랜스포트에 대해서 더욱 그러하다.
 </p>
 <p>
   Holistic approaches to the design of the on-board vehicular intelligence (or any sophisticated system in general)
